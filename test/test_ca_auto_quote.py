@@ -1,13 +1,5 @@
 # -*- coding: utf-8 -*-
 from model.parameters import Testdata
-import pytest
-from fixture.application import Application
-
-@pytest.fixture()
-def app(request):
-    fixture = Application()
-    request.addfinalizer(fixture.destroy)
-    return fixture
 
 
 def test_test_ca_auto_quote(app):
@@ -18,4 +10,4 @@ def test_test_ca_auto_quote(app):
                                                         first_name="Test"))
         app.quotes.fill_vehicle_information()
         app.quotes.fill_driver_page(Testdata(dob="01/01/1977"))
-
+        app.quotes.select_coverage_page()
