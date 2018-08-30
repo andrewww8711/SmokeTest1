@@ -4,7 +4,7 @@ Feature: California quotes
   Scenario Outline: Create California auto quote
       Given a user with <first_name>, <phone_number>, <address>, <last_name>, <email>, <ca_zip_code>
       Given the user opens the home page with <ca_zip_code>
-      When the user navigates to the CA auto quote page_change on repo
+      When the user navigates to the CA auto quote page_change on repo111
       When user fills in contact information page
       When user fills in vehicle information page
       When user fills in driver information page
