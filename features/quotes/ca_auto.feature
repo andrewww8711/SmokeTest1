@@ -8,7 +8,7 @@ Feature: California quotes
       When user fills in contact information page
       When user fills in vehicle information page
       When user fills in driver information page
-      Then user selects coverage
+      Then user selects coverage_change on local
       #Then a new quote is created
 
       Examples:
