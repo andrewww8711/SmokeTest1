@@ -10,7 +10,10 @@ Feature: California quotes
       When user fills in driver information page
       Then user selects coverage_change on local
       #Then a new quote is created
-
+      
+      remote change
+      
+        
       Examples:
 
       | ca_zip_code | first_name | phone_number | address          | last_name     | email                          |
