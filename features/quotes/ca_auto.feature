@@ -9,10 +9,13 @@ Feature: California quotes
       When user fills in vehicle information page
       When user fills in driver information page
       Then user selects coverage_change on local
+
+      local change
       #Then a new quote is created
       
       remote change
-      
+
+      small change on brang
         
       Examples:
 
